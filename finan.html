@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>finanças</title>
+  <link rel="stylesheet" href="./finan.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <div class="monthSelector">
+      <label for="month">Mês:</label>
+      <select id="month">
+        <option value="01">Janeiro</option>
+        <option value="02">Fevereiro</option>
+        <option value="03">Março</option>
+        <option value="04">Abril</option>
+        <option value="05">Maio</option>
+        <option value="06">Junho</option>
+        <option value="07">Julho</option>
+        <option value="08">Agosto</option>
+        <option value="09">Setembro</option>
+        <option value="10">Outubro</option>
+        <option value="11">Novembro</option>
+        <option value="12">Dezembro</option>
+      </select>
+    </div>
+
+    <div class="resume">
+      <div>
+        Entradas: R$ <span class="incomes">0.00</span>
+      </div>
+      <div>
+        Saídas: R$ <span class="expenses">0.00</span>
+      </div>
+      <div>
+        Total: R$ <span class="total">0.00</span>
+      </div>
+    </div>
+
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <input id="desc" type="text" />
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input id="amount" type="number" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="./finan.js"></script>
+</body>
+</html>
