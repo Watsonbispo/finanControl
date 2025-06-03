@@ -66,7 +66,7 @@ main {
 
 .resume div {
   flex: 1;
-  background: #f0f4f8;
+  background: #e5e5e7;
   padding: 15px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -168,6 +168,10 @@ th {
 
 td {
   border: none;
+}
+ 
+tr{
+  border-bottom: 1px solid rgba(194, 193, 193, 0.7);
 }
 
 .columnAction {
